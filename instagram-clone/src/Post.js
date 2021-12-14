@@ -48,7 +48,7 @@ function Post({ postId, username, caption, imageUrl, user }) {
           <Avatar
             className="post__avatar"
             alt="Instagram"
-            src="/static/images/avatar/1.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWMkvQQDrSH-gACD2IXYpO3GHaZ7lc9okdRA&usqp=CAU"
           />
           <h3>{username}</h3>
         </div>

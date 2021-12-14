@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
+import "./App.css";
 import Post from "./Post";
 import Modal from "@material-ui/core/Modal";
-import "./App.css";
 import { db, auth } from "./firebase";
 import { makeStyles, Button, Input } from "@material-ui/core";
 import ImageUpload from "./ImageUpload";
-
 
 function getModalStyle() {
   const top = 50;
@@ -99,7 +98,7 @@ function App() {
             <center>
               <img
                 className="app__headerImage"
-                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"
+                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.pngg"
                 height="40px"
                 alt=""
               />
@@ -194,7 +193,7 @@ function App() {
       {user?.displayName ? (
         <ImageUpload username={user.displayName} />
       ) : (
-        <h3>Sorry you need to login to upload</h3>
+        <h3>You need to Login to upload</h3>
       )}
     </div>
   );

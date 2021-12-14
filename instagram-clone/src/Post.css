@@ -12,7 +12,7 @@
   }
   .post__text {
     font-weight: normal;
-    padding: 20px;
+    padding: 10px;
 
   }
   .post__header {
@@ -23,7 +23,7 @@
   .post__headerUser {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding:5px;
   }
   .post__avatar {
     margin-right: 10px;
@@ -46,7 +46,7 @@
   .post__button{
     flex: 0;
     border: none;
-    color:#6082a3;
-    background-color: transparent;
+    color:#1410ee;
+    background-color: rgb(250, 244, 244);
     border-top: 1px solid lightgray;
   }

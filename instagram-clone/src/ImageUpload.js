@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
+
 import { storage, db } from "./firebase";
 import firebase from "firebase/compat";
 import "./ImageUpload.css";
@@ -30,7 +31,6 @@ function ImageUpload({ username }) {
         console.log(error);
       },
       () => {
-        // complete function
         storage
           .ref("images")
           .child(image.name)
@@ -49,7 +49,6 @@ function ImageUpload({ username }) {
       }
     );
   };
-
   return (
     <div className="imageupload">
       <progress className="imageupload__progress" value={progress} max="100" />
@@ -68,5 +67,4 @@ function ImageUpload({ username }) {
     </div>
   );
 }
-
 export default ImageUpload;
