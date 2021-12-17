@@ -193,7 +193,7 @@ function App() {
       {user?.displayName ? (
         <ImageUpload username={user.displayName} />
       ) : (
-        <h3>You need to Login to upload</h3>
+        <h3>Login to upload</h3>
       )}
     </div>
   );
